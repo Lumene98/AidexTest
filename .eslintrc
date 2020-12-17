@@ -1,0 +1,77 @@
+{
+    "parser": "babel-eslint",
+    "extends": [
+        "prettier",
+        "plugin:react/recommended",
+        "plugin:import/errors",
+        "plugin:import/warnings"
+    ],
+    "plugins": [
+        "prettier",
+        "react",
+        "import",
+        "react-hooks"
+    ],
+    "rules": {
+        "prettier/prettier": [
+            "error",
+            {
+                "singleQuote": false,
+                "trailingComma": "es5"
+            }
+        ],
+        "no-unused-vars": [
+            "warn"
+        ],
+        "indent": [
+            "off"
+        ],
+        "no-alert": "off",
+        "no-warning-comments": "warn",
+        "max-params": "off",
+        "complexity": "off",
+        "quotes": [
+            2,
+            "double",
+            {
+                "avoidEscape": true,
+                "allowTemplateLiterals": true
+            }
+        ],
+        "no-negated-condition": [
+            0
+        ],
+        "camelcase": [
+            0
+        ],
+        "capitalized-comments": [
+            0
+        ],
+        "new-cap": "off",
+        "consistent-return": "warn",
+        "no-console": "off",
+        "import/no-unresolved": [
+            2,
+            {
+                "commonjs": true,
+                "amd": true
+            }
+        ],
+        "import/named": 2,
+        "import/namespace": 2,
+        "import/default": 2,
+        "import/export": 2,
+        "react-hooks/rules-of-hooks": "error",
+        "import/no-named-as-default": "off"
+    },
+    "env": {
+        "es6": true,
+        "node": true,
+        "browser": true
+    },
+    "settings": {
+        "react": {
+            "version": "17.0.1"
+        }
+    }
+}
